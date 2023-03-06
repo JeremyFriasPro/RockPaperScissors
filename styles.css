@@ -1,0 +1,85 @@
+:root {
+    --clr-1: #F1E9DA;
+    --clr-2: #FFD400;
+    --clr-3: #2E294E;
+}
+
+.yellow {
+    color: var(--clr-2);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.05em;
+}
+
+body {
+    color: var(--clr-1);
+    background: var(--clr-3);
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#game-title {
+    font-size: 3.5em;
+    line-height: 1.15em;
+}
+
+#game-caption {
+    font-weight: 200;
+    font-size: 1.8em;
+}
+
+#start {
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-top: 1.5em;
+    color: var(--clr-3);
+    background: var(--clr-2);
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+#start:hover {
+    box-shadow: #ffd500c0 0px 1px 16px, #ffd500c0 0px 1px 6px;
+    transform: scale(1.07);
+    transition: 0.25s;
+}
+
+#gameplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    background: var(--clr-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
